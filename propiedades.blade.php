@@ -261,7 +261,7 @@
 
         <!-- Content-->
         <section class=" grid grid-rows-1 md:grid-cols-3">
-
+            <!-- Column Filter-->
             <div class="mx-10 md:mx-0  lg:mx-10">
 
                 <!--Filter-->
@@ -370,7 +370,7 @@
 
 
             </div>
-
+            <!-- Column Houses-->
             <div class=" mx-10 md:col-span-2 md:mt-7">
 
 
@@ -492,7 +492,7 @@
 
                     </div>
 
-                    <hr class="block border-black my-9 md:hidden" />
+                    <hr class="block border-black my-7 md:hidden" />
                     <!-- 2 row-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
