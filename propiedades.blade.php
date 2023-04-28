@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     @vite('resources/css/app.css') @vite('resources/js/app.js')
-    <title>propiedades</title>
+    <title>Propiedades</title>
 </head>
 
 <body>
@@ -265,13 +265,12 @@
             <div class="mx-10 md:mx-0  lg:mx-10">
 
                 <!--Filter-->
-
                 <div class=" bg-white shadow-xl rounded-xl ">
                     <div class=" m-8">
                         <h2 class="text-blue-950 font-bold text-2xl pt-8 ">
                             Tipos de inversion
                         </h2>
-                        <!--Content Filter-->
+
 
                         <div class="grid grid-cols-3 text-center mt-5 ">
 
@@ -362,7 +361,7 @@
 
                     </div>
                 </div>
-
+                <!--Decoration-->
                 <img class="hidden md:block" src="/media/grafi.png " alt="">
 
                 <img class="sm:block absolute bottom-[60rem] left-0 hidden " src="/media/palmera.png "
@@ -375,18 +374,139 @@
 
 
                 <div class="grid grid-rows-1 gap-5 md:grid-cols-1 ">
-                    <!-- 1 row-->
+                    <!-- 1 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
-                        <!-- Images 1-->
-                        <div class="col-span-2 bg-cover bg-center rounded-2xl lg:h-[24rem] ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
+                        <!-- Image: 1-->
+                        <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl sm:h-[24rem]"
+                            <div class=" grid grid-rows-3 gap-y-3 h-full">
+
+                                <div class=" row-span-2 bg-cover bg-center rounded-2xl "
                                     style="background-image: url('/media/house.jpg');">
                                 </div>
 
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer sm:hidden"
+                                <div class=" bg-cover bg-center rounded-2xl flex justify-center cursor-pointer "
+                                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
+                                    <div class="place-self-center text-center text-white">
+                                        <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
+                                        <h3 class="sm:text-lg">Imagenes</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card price-->
+                        <div class=" shadow-xl col-span-2 rounded-xl md:col-span-3 md:w-full lg:col-span-2 lg:w-full">
+                            <div class="px-5 py-5">
+                                <div class="flex justify-end">
+
+                                    <button
+                                        class="text-white bg-green-600 rounded-2xl font-semibold px-5 py-1 text-md mt-3 justify-end ">
+                                        Venta
+                                    </button>
+                                </div>
+                                <div class="py-2 ">
+                                    <h2 class="text-blue-900 font-bold text-2xl md:text-2xl">
+                                        Nombre de la casa
+                                    </h2>
+                                    <p class="text-gray-600 text-sm ">
+                                        Ubicacion del proyecto
+                                    </p>
+                                </div>
+
+                                <hr class=" border-black py-2" />
+
+                                <div class="text-white bg-green-600 px-2 py-1 rounded-bl-lg rounded-tr-lg">
+                                    <p class="text-gray-200 text-sm md:text-md">
+                                        Valor propiedad
+                                    </p>
+                                    <h2 class="text-white font-bold text-2xl md:text-1xl">
+                                        20.0000.000 <span>COP</span>
+                                    </h2>
+                                </div>
+
+                                <div class="flex justify-between my-4">
+                                    <div>
+                                        <div class="flex gap-2">
+                                            <img class="self-center" src="/media/door.png" alt="">
+                                            <span class=" text-gray-600 text-sm">4 ambientes</span>
+                                        </div>
+
+                                        <div class="flex gap-2">
+                                            <img class="self-center" src="/media/bath.png" alt="">
+                                            <span class="text-gray-600 text-sm"> 2 baños</span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+
+
+
+                                        <div class="flex gap-2">
+                                            <img class="self-center" src="/media/meters.png" alt="">
+                                            <span class="text-gray-600 text-sm"> 60m<sup>2</sup></span>
+                                        </div>
+
+                                        <div class="flex gap-2">
+                                            <img class="self-center" src="/media/bed.png" alt="">
+                                            <span class="text-gray-600 text-sm">3 dormitorios</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <h2 class="text-blue-900 text-xl font-bold">
+                                    nombre del proyecto
+                                </h2>
+                                <a class="block underline text-gray-600 " href="#">conocer mas</a>
+
+                                <button
+                                    class="text-white bg-blue-900 cursor:pointer rounded py-1 px-10 rounded-tl-lg rounded-br-lg font-bold mt-3 text-lg  ">
+                                    Ver más
+                                </button>
+
+                            </div>
+                        </div>
+                        <!-- Images: 2-->
+                        <div class="w-10/12 hidden lg:block lg:w-full ">
+
+                            <div class="w-full h-full grid grid-rows-3 gap-y-3">
+
+                                <div class="row-span-2 bg-cover bg-center rounded-2xl"
+                                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/vHWP4BA3L4IMLDJyMEdxVCUlsTbW5m-metaU2NyZWVuc2hvdF8xLmpwZw==-.jpg');">
+                                </div>
+
+                                <div class="w-full  bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
+                                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
+                                    <div class="place-self-center text-center text-white">
+                                        <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
+                                        <h3 class="sm:text-lg">Imagenes</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <hr class="block border-black my-7 md:hidden" />
+                    <!-- 2 house-->
+                    <div
+                        class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
+                        <!-- Images 1-->
+                        <div class="col-span-2 bg-cover bg-center rounded-2xl ">
+
+                            <div class=" grid grid-rows-3 gap-y-3 h-full">
+
+                                <div class=" row-span-2 bg-cover bg-center rounded-2xl "
+                                    style="background-image: url('/media/house.jpg');">
+                                </div>
+
+                                <div class=" bg-cover bg-center rounded-2xl flex justify-center cursor-pointer "
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                                     <div class="place-self-center text-center text-white">
                                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
@@ -471,131 +591,14 @@
                         </div>
                         <!-- Images 2-->
                         <div class="w-10/12 hidden lg:block lg:w-full ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
 
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl"
+                            <div class="w-full h-full grid grid-rows-3 gap-y-3">
+
+                                <div class="row-span-2 bg-cover bg-center rounded-2xl"
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/vHWP4BA3L4IMLDJyMEdxVCUlsTbW5m-metaU2NyZWVuc2hvdF8xLmpwZw==-.jpg');">
                                 </div>
 
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
-                                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
-                                    <div class="place-self-center text-center text-white">
-                                        <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
-                                        <h3 class="sm:text-lg">Imagenes</h3>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                    <hr class="block border-black my-7 md:hidden" />
-                    <!-- 2 row-->
-                    <div
-                        class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
-                        <!-- Images 1-->
-                        <div class="col-span-2 bg-cover bg-center rounded-2xl lg:h-[24rem] ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
-
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl sm:h-[24rem]"
-                                    style="background-image: url('/media/house.jpg');">
-                                </div>
-
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer sm:hidden"
-                                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
-                                    <div class="place-self-center text-center text-white">
-                                        <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
-                                        <h3 class="sm:text-lg">Imagenes</h3>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- card price-->
-                        <div class=" shadow-xl col-span-2 rounded-xl md:col-span-3 md:w-full lg:col-span-2 lg:w-full">
-                            <div class="px-5 py-5">
-                                <div class="flex justify-end">
-
-                                    <button
-                                        class="text-white bg-green-600 rounded-2xl font-semibold px-5 py-1 text-md mt-3 justify-end ">
-                                        Venta
-                                    </button>
-                                </div>
-                                <div class="py-2 ">
-                                    <h2 class="text-blue-900 font-bold text-2xl md:text-2xl">
-                                        Nombre de la casa
-                                    </h2>
-                                    <p class="text-gray-600 text-sm ">
-                                        Ubicacion del proyecto
-                                    </p>
-                                </div>
-
-                                <hr class=" border-black py-2" />
-
-                                <div class="text-white bg-green-600 px-2 py-1 rounded-bl-lg rounded-tr-lg">
-                                    <p class="text-gray-200 text-sm md:text-md">
-                                        Valor propiedad
-                                    </p>
-                                    <h2 class="text-white font-bold text-2xl md:text-1xl">
-                                        20.0000.000 <span>COP</span>
-                                    </h2>
-                                </div>
-
-                                <div class="flex justify-between my-4">
-                                    <div>
-                                        <div class="flex gap-2">
-                                            <img class="self-center" src="/media/door.png" alt="">
-                                            <span class=" text-gray-600 text-xs">4 ambientes</span>
-                                        </div>
-
-                                        <div class="flex gap-2">
-                                            <img class="self-center" src="/media/bath.png" alt="">
-                                            <span class="text-gray-600 text-xs"> 2 baños</span>
-                                        </div>
-                                    </div>
-
-                                    <div>
-
-
-
-                                        <div class="flex gap-2">
-                                            <img class="self-center" src="/media/meters.png" alt="">
-                                            <span class="text-gray-600 text-xs"> 60m<sup>2</sup></span>
-                                        </div>
-
-                                        <div class="flex gap-2">
-                                            <img class="self-center" src="/media/bed.png" alt="">
-                                            <span class="text-gray-600 text-sm">3 dormitorios</span>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <h2 class="text-blue-900 text-xl font-bold">
-                                    nombre del proyecto
-                                </h2>
-                                <a class="block underline text-gray-600 " href="#">conocer mas</a>
-
-                                <button
-                                    class="text-white bg-blue-900 cursor:pointer rounded py-1 px-10 rounded-tl-lg rounded-br-lg font-bold mt-3 text-lg  ">
-                                    Ver más
-                                </button>
-
-                            </div>
-                        </div>
-                        <!-- Images 2-->
-                        <div class="w-10/12 hidden lg:block lg:w-full ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
-
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl"
-                                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/vHWP4BA3L4IMLDJyMEdxVCUlsTbW5m-metaU2NyZWVuc2hvdF8xLmpwZw==-.jpg');">
-                                </div>
-
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
+                                <div class="w-full  bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                                     <div class="place-self-center text-center text-white">
                                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
@@ -612,18 +615,19 @@
 
 
                     <hr class="block border-black my-9 md:hidden" />
-                    <!-- 3 row-->
+                    <!-- 3 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
                         <!-- Images 1-->
-                        <div class="col-span-2 bg-cover bg-center rounded-2xl lg:h-[24rem] ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
+                        <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl sm:h-[24rem]"
+                            <div class=" grid grid-rows-3 gap-y-3 h-full">
+
+                                <div class=" row-span-2 bg-cover bg-center rounded-2xl "
                                     style="background-image: url('/media/house.jpg');">
                                 </div>
 
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer sm:hidden"
+                                <div class=" bg-cover bg-center rounded-2xl flex justify-center cursor-pointer "
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                                     <div class="place-self-center text-center text-white">
                                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
@@ -667,12 +671,12 @@
                                     <div>
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/door.png" alt="">
-                                            <span class=" text-gray-600 text-xs">4 ambientes</span>
+                                            <span class=" text-gray-600 text-sm">4 ambientes</span>
                                         </div>
 
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/bath.png" alt="">
-                                            <span class="text-gray-600 text-xs"> 2 baños</span>
+                                            <span class="text-gray-600 text-sm"> 2 baños</span>
                                         </div>
                                     </div>
 
@@ -682,7 +686,7 @@
 
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/meters.png" alt="">
-                                            <span class="text-gray-600 text-xs"> 60m<sup>2</sup></span>
+                                            <span class="text-gray-600 text-sm"> 60m<sup>2</sup></span>
                                         </div>
 
                                         <div class="flex gap-2">
@@ -708,13 +712,14 @@
                         </div>
                         <!-- Images 2-->
                         <div class="w-10/12 hidden lg:block lg:w-full ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
 
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl"
+                            <div class="w-full h-full grid grid-rows-3 gap-y-3">
+
+                                <div class="row-span-2 bg-cover bg-center rounded-2xl"
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/vHWP4BA3L4IMLDJyMEdxVCUlsTbW5m-metaU2NyZWVuc2hvdF8xLmpwZw==-.jpg');">
                                 </div>
 
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
+                                <div class="w-full  bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                                     <div class="place-self-center text-center text-white">
                                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
@@ -728,21 +733,21 @@
 
 
                     </div>
-
 
                     <hr class="block border-black my-9 md:hidden" />
-                    <!-- 4 row-->
+                    <!-- 4 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
                         <!-- Images 1-->
-                        <div class="col-span-2 bg-cover bg-center rounded-2xl lg:h-[24rem] ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
+                        <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl sm:h-[24rem]"
+                            <div class=" grid grid-rows-3 gap-y-3 h-full">
+
+                                <div class=" row-span-2 bg-cover bg-center rounded-2xl "
                                     style="background-image: url('/media/house.jpg');">
                                 </div>
 
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer sm:hidden"
+                                <div class=" bg-cover bg-center rounded-2xl flex justify-center cursor-pointer "
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                                     <div class="place-self-center text-center text-white">
                                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
@@ -786,12 +791,12 @@
                                     <div>
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/door.png" alt="">
-                                            <span class=" text-gray-600 text-xs">4 ambientes</span>
+                                            <span class=" text-gray-600 text-sm">4 ambientes</span>
                                         </div>
 
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/bath.png" alt="">
-                                            <span class="text-gray-600 text-xs"> 2 baños</span>
+                                            <span class="text-gray-600 text-sm"> 2 baños</span>
                                         </div>
                                     </div>
 
@@ -801,7 +806,7 @@
 
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/meters.png" alt="">
-                                            <span class="text-gray-600 text-xs"> 60m<sup>2</sup></span>
+                                            <span class="text-gray-600 text-sm"> 60m<sup>2</sup></span>
                                         </div>
 
                                         <div class="flex gap-2">
@@ -827,13 +832,14 @@
                         </div>
                         <!-- Images 2-->
                         <div class="w-10/12 hidden lg:block lg:w-full ">
-                            <div class="w-full grid grid-cols-1 gap-y-3">
 
-                                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl"
+                            <div class="w-full h-full grid grid-rows-3 gap-y-3">
+
+                                <div class="row-span-2 bg-cover bg-center rounded-2xl"
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/vHWP4BA3L4IMLDJyMEdxVCUlsTbW5m-metaU2NyZWVuc2hvdF8xLmpwZw==-.jpg');">
                                 </div>
 
-                                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
+                                <div class="w-full  bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
                                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                                     <div class="place-self-center text-center text-white">
                                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
@@ -847,7 +853,6 @@
 
 
                     </div>
-
 
                 </div>
 
