@@ -1,25 +1,26 @@
 <div>
     @foreach($houses as $house)
-    <div class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
+    <div
+    class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
 
-        <div class="col-span-2 bg-cover bg-center rounded-2xl lg:h-[24rem] "
-            >
-            <div class="w-full grid grid-cols-1 gap-y-3">
+    <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
-                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl sm:h-[24rem]"
-                    style="background-image: url('/media/house.jpg');">
-                </div>
+        <div class=" grid grid-rows-3 gap-y-3 h-full">
 
-                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer sm:hidden"
-                    style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
-                    <div class="place-self-center text-center text-white">
-                        <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
-                        <h3 class="sm:text-lg">Imagenes</h3>
-                    </div>
-                </div>
-
+            <div class=" row-span-2 bg-cover bg-center rounded-2xl "
+                style="background-image: url('/media/house.jpg');">
             </div>
+
+            <div class=" bg-cover bg-center rounded-2xl flex justify-center cursor-pointer "
+                style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
+                <div class="place-self-center text-center text-white">
+                    <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
+                    <h3 class="sm:text-lg">Imagenes</h3>
+                </div>
+            </div>
+
         </div>
+    </div>
 
         <div class=" shadow-xl col-span-2 rounded-xl md:col-span-3 md:w-full lg:col-span-2 lg:w-full">
             <div class="px-5 py-5">
@@ -94,13 +95,14 @@
         </div>
 
         <div class="w-10/12 hidden lg:block lg:w-full ">
-            <div class="w-full grid grid-cols-1 gap-y-3">
 
-                <div class="w-full h-[16rem] bg-cover bg-center rounded-2xl"
+            <div class="w-full h-full grid grid-rows-3 gap-y-3">
+
+                <div class="row-span-2 bg-cover bg-center rounded-2xl"
                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/vHWP4BA3L4IMLDJyMEdxVCUlsTbW5m-metaU2NyZWVuc2hvdF8xLmpwZw==-.jpg');">
                 </div>
 
-                <div class="w-full h-[7rem] bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
+                <div class="w-full  bg-cover bg-center rounded-2xl flex justify-center cursor-pointer"
                     style="background-image: url('https://goldenhome.com.co/storage/propertyTypes/images/1fxcHTpj8Kdmwljty8sP9B80Crslcu-metaU2NyZWVuc2hvdF8zLmpwZw==-.jpg');">
                     <div class="place-self-center text-center text-white">
                         <h5 class="font-bold text-xl sm:text-2xl">+4</h5>
