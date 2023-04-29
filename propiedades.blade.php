@@ -263,10 +263,22 @@
         <section class=" grid grid-rows-1 md:grid-cols-3">
             <!-- Column Filter-->
             <div class="mx-10 md:mx-0  lg:mx-10">
+                <div class="grid grid-cols-2 gap-3 mt-7">
+                    <button type="submit"
+                        class="bg-green-600 text-white font-bold py-2  rounded-br-xl rounded-tl-xl  text-lg w-full  shadow-lg shadow-blue-200">
+                        Compra Fracción
+
+                    </button>
+
+                    <button type="submit"
+                        class="bg-green-600 text-white font-bold py-2 rounded-br-xl rounded-tl-xl  text-lg w-full   shadow-lg shadow-blue-200 ">
+                        Compra Tradicional
+                    </button>
+                </div>
 
                 <!--Filter-->
-                <div class=" bg-white shadow-xl rounded-xl ">
-                    <div class=" m-8">
+                <div class=" bg-white shadow-xl rounded-xl pb-1">
+                    <div class=" m-8 mt-4">
                         <h2 class="text-blue-950 font-bold text-2xl pt-8 ">
                             Tipos de inversion
                         </h2>
@@ -303,28 +315,16 @@
 
                         </div>
 
-                        <div class="grid grid-cols-2 mt-5">
-
-                            <label class="flex items-center gap-2 ">
-                                <input type="radio" name="compra" value="tradicional" />
-                                <span class="text-l text-blue-950 font-bold leading-none">Compra <br>
-                                    Tradicional</span>
-                            </label>
-
-                            <label class="flex items-center gap-2 ml-5">
-                                <input type="radio" name="compra" value="fraccion" />
-                                <span class="text-l text-blue-950 font-bold leading-none">Compra <br> Fracción</span>
-                            </label>
-                        </div>
 
 
-                        <h2 class="text-blue-950 font-bold text-2xl mt-4"> Características</h2>
+
+                        <h2 class="text-blue-950 font-bold text-2xl mt-8"> Características</h2>
                         <div class="mt-4">
 
                             <div class="flex justify-between font-bold">
                                 <p class="text-gray-400 text-l "> Habitaciones </p>
 
-                                <div x-data="{ count: 0 }" class="flex shadow-md rounded-md">
+                                <div x-data="{ count: 1 }" class="flex shadow-md rounded-md">
                                     <button x-on:click="count--"
                                         class="px-3 bg-white rounded-tl-xl rounded-bl-xl border-r-2 border-gray-200"
                                         x-bind:disabled="count <= 0">-</button>
@@ -337,7 +337,7 @@
 
                             <div class="flex justify-between mt-2 font-bold">
                                 <p class="text-gray-400 text-l  "> Baños </p>
-                                <div x-data="{ count: 0 }" class="flex shadow-md rounded-md">
+                                <div x-data="{ count: 1 }" class="flex shadow-md rounded-md">
                                     <button x-on:click="count--" x-bind:disabled="count <= 0"
                                         class="px-3 bg-white rounded-tl-xl rounded-bl-xl border-r-2 border-gray-200">-</button>
                                     <div class="px-2 bg-white" x-text="count">1</div>
@@ -374,6 +374,38 @@
 
 
                 <div class="grid grid-rows-1 gap-5 md:grid-cols-1 ">
+                    <!-- Bunch of text-->
+                    <div class="my-4 md:mt-0  ">
+                        <h2 class=" text-blue-950 text-xl font-bold">¿Qué es compra tradicional?</h2>
+                        <p class="text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                            consequuntur, adipisci ea beatae sint est blanditiis ut quia provident dicta aliquam iusto
+                            explicabo recusandae iste quo rerum nostrum laboriosam. Inventore.Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit. Sed consequuntur, adipisci ea beatae sint est blanditiis
+                            ut quia provident dicta aliquam iusto explicabo recusandae iste quo rerum nostrum
+                            laboriosam. Inventore.</p>
+
+                        <h2 class=" text-blue-950 text-xl font-bold">¿Qué es compra fraccionaria?</h2>
+                        <p class="text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                            consequuntur, adipisci ea beatae sint est blanditiis ut quia.</p>
+
+                        <h2 class=" text-blue-950 text-xl font-bold">Tipo de inmuebles compra fraccionada</h2>
+                        <p class="text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                            consequuntur, adipisci ea beatae sint est blanditiis ut quia provident dicta aliquam iusto
+                            explicabo recusandae iste quo rerum nostrum laboriosam. Inventore. adipisci ea beatae sint
+                            est blanditiis ut quia provident dicta aliquam iusto explicabo recusandae iste quo rerum
+                            nostrum laboriosam. Inventore</p>
+
+                        <h2 class=" text-blue-950 text-xl font-bold">Beneficios de compra fraccionada</h2>
+                        <p class="text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                            consequuntur, adipisci ea beatae sint est blanditiis ut quia provident dicta aliquam iusto
+                            explicabo recusandae iste quo rerum nostrum laboriosam. Inventore.Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit. Sed consequuntur, adipisci ea beatae sint est blanditiis
+                            ut quia provident dicta aliquam iusto explicabo recusandae iste quo rerum nostrum
+                            laboriosam. Inventore</p>
+
+                    </div>
+
+
                     <!-- 1 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
@@ -403,7 +435,7 @@
 
                                     <button
                                         class="text-white bg-green-600 rounded-2xl font-semibold px-5 py-1 text-md mt-3 justify-end ">
-                                        Venta
+                                        Fracción
                                     </button>
                                 </div>
                                 <div class="py-2 ">
@@ -417,16 +449,57 @@
 
                                 <hr class=" border-black py-2" />
 
-                                <div class="text-white bg-green-600 px-2 py-1 rounded-bl-lg rounded-tr-lg">
-                                    <p class="text-gray-200 text-sm md:text-md">
-                                        Valor propiedad
-                                    </p>
-                                    <h2 class="text-white font-bold text-2xl md:text-1xl">
-                                        20.0000.000 <span>COP</span>
-                                    </h2>
+                                <div class="grid grid-cols-3 gap-1 ">
+
+                                    <div class="text-white bg-green-600  rounded-bl-lg rounded-tr-lg col-span-2 ">
+                                        <p class="text-gray-200 text-md mx-2 mt-2">
+                                            Valor Fracción
+                                        </p>
+                                        <h2 class="text-white font-bold text-xl mx-2">
+                                            20.0000.000 <span class="font-normal text-xs">COP</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="text-white  bg-green-600 rounded-bl-lg rounded-tr-lg col-span-1">
+
+                                        <p class="text-gray-200 text-xs leading-none mt-2 text-center ">
+                                            fracciones disponibles
+                                        </p>
+
+                                        <h2 class="text-white font-bold  mb-1 text-4xl text-center">
+                                            10
+                                        </h2>
+                                    </div>
                                 </div>
 
-                                <div class="flex justify-between my-4">
+                                <div class="mt-4">
+                                    <h2 class="text-blue-950 font-bold text-xl">Fracciones Compradas #2</h2>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación uno</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación dos</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <p class="text-lg text-gray-600 mb-1">Detalles destacados</p>
+                                </div>
+
+
+
+                                <div class="flex justify-between mb-4">
                                     <div>
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/door.png" alt="">
@@ -439,8 +512,9 @@
                                         </div>
                                     </div>
 
-                                    <div>
 
+
+                                    <div>
 
 
                                         <div class="flex gap-2">
@@ -457,10 +531,7 @@
 
                                 </div>
 
-                                <h2 class="text-blue-900 text-xl font-bold">
-                                    nombre del proyecto
-                                </h2>
-                                <a class="block underline text-gray-600 " href="#">conocer mas</a>
+
 
                                 <button
                                     class="text-white bg-blue-900 cursor:pointer rounded py-1 px-10 rounded-tl-lg rounded-br-lg font-bold mt-3 text-lg  ">
@@ -497,7 +568,7 @@
                     <!-- 2 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
-                        <!-- Images 1-->
+                        <!-- Image: 1-->
                         <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
                             <div class=" grid grid-rows-3 gap-y-3 h-full">
@@ -523,7 +594,7 @@
 
                                     <button
                                         class="text-white bg-green-600 rounded-2xl font-semibold px-5 py-1 text-md mt-3 justify-end ">
-                                        Venta
+                                        Fracción
                                     </button>
                                 </div>
                                 <div class="py-2 ">
@@ -537,16 +608,57 @@
 
                                 <hr class=" border-black py-2" />
 
-                                <div class="text-white bg-green-600 px-2 py-1 rounded-bl-lg rounded-tr-lg">
-                                    <p class="text-gray-200 text-sm md:text-md">
-                                        Valor propiedad
-                                    </p>
-                                    <h2 class="text-white font-bold text-2xl md:text-1xl">
-                                        20.0000.000 <span>COP</span>
-                                    </h2>
+                                <div class="grid grid-cols-3 gap-1 ">
+
+                                    <div class="text-white bg-green-600  rounded-bl-lg rounded-tr-lg col-span-2 ">
+                                        <p class="text-gray-200 text-md mx-2 mt-2">
+                                            Valor Fracción
+                                        </p>
+                                        <h2 class="text-white font-bold text-xl mx-2">
+                                            20.0000.000 <span class="font-normal text-xs">COP</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="text-white  bg-green-600 rounded-bl-lg rounded-tr-lg col-span-1">
+
+                                        <p class="text-gray-200 text-xs leading-none mt-2 text-center ">
+                                            fracciones disponibles
+                                        </p>
+
+                                        <h2 class="text-white font-bold  mb-1 text-4xl text-center">
+                                            10
+                                        </h2>
+                                    </div>
                                 </div>
 
-                                <div class="flex justify-between my-4">
+                                <div class="mt-4">
+                                    <h2 class="text-blue-950 font-bold text-xl">Fracciones Compradas #2</h2>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación uno</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación dos</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <p class="text-lg text-gray-600 mb-1">Detalles destacados</p>
+                                </div>
+
+
+
+                                <div class="flex justify-between mb-4">
                                     <div>
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/door.png" alt="">
@@ -559,8 +671,9 @@
                                         </div>
                                     </div>
 
-                                    <div>
 
+
+                                    <div>
 
 
                                         <div class="flex gap-2">
@@ -577,10 +690,7 @@
 
                                 </div>
 
-                                <h2 class="text-blue-900 text-xl font-bold">
-                                    nombre del proyecto
-                                </h2>
-                                <a class="block underline text-gray-600 " href="#">conocer mas</a>
+
 
                                 <button
                                     class="text-white bg-blue-900 cursor:pointer rounded py-1 px-10 rounded-tl-lg rounded-br-lg font-bold mt-3 text-lg  ">
@@ -589,7 +699,7 @@
 
                             </div>
                         </div>
-                        <!-- Images 2-->
+                        <!-- Images: 2-->
                         <div class="w-10/12 hidden lg:block lg:w-full ">
 
                             <div class="w-full h-full grid grid-rows-3 gap-y-3">
@@ -613,12 +723,11 @@
 
                     </div>
 
-
-                    <hr class="block border-black my-9 md:hidden" />
+                    <hr class="block border-black my-7 md:hidden" />
                     <!-- 3 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
-                        <!-- Images 1-->
+                        <!-- Image: 1-->
                         <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
                             <div class=" grid grid-rows-3 gap-y-3 h-full">
@@ -644,7 +753,7 @@
 
                                     <button
                                         class="text-white bg-green-600 rounded-2xl font-semibold px-5 py-1 text-md mt-3 justify-end ">
-                                        Venta
+                                        Fracción
                                     </button>
                                 </div>
                                 <div class="py-2 ">
@@ -658,16 +767,57 @@
 
                                 <hr class=" border-black py-2" />
 
-                                <div class="text-white bg-green-600 px-2 py-1 rounded-bl-lg rounded-tr-lg">
-                                    <p class="text-gray-200 text-sm md:text-md">
-                                        Valor propiedad
-                                    </p>
-                                    <h2 class="text-white font-bold text-2xl md:text-1xl">
-                                        20.0000.000 <span>COP</span>
-                                    </h2>
+                                <div class="grid grid-cols-3 gap-1 ">
+
+                                    <div class="text-white bg-green-600  rounded-bl-lg rounded-tr-lg col-span-2 ">
+                                        <p class="text-gray-200 text-md mx-2 mt-2">
+                                            Valor Fracción
+                                        </p>
+                                        <h2 class="text-white font-bold text-xl mx-2">
+                                            20.0000.000 <span class="font-normal text-xs">COP</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="text-white  bg-green-600 rounded-bl-lg rounded-tr-lg col-span-1">
+
+                                        <p class="text-gray-200 text-xs leading-none mt-2 text-center ">
+                                            fracciones disponibles
+                                        </p>
+
+                                        <h2 class="text-white font-bold  mb-1 text-4xl text-center">
+                                            10
+                                        </h2>
+                                    </div>
                                 </div>
 
-                                <div class="flex justify-between my-4">
+                                <div class="mt-4">
+                                    <h2 class="text-blue-950 font-bold text-xl">Fracciones Compradas #2</h2>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación uno</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación dos</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <p class="text-lg text-gray-600 mb-1">Detalles destacados</p>
+                                </div>
+
+
+
+                                <div class="flex justify-between mb-4">
                                     <div>
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/door.png" alt="">
@@ -680,8 +830,9 @@
                                         </div>
                                     </div>
 
-                                    <div>
 
+
+                                    <div>
 
 
                                         <div class="flex gap-2">
@@ -698,10 +849,7 @@
 
                                 </div>
 
-                                <h2 class="text-blue-900 text-xl font-bold">
-                                    nombre del proyecto
-                                </h2>
-                                <a class="block underline text-gray-600 " href="#">conocer mas</a>
+
 
                                 <button
                                     class="text-white bg-blue-900 cursor:pointer rounded py-1 px-10 rounded-tl-lg rounded-br-lg font-bold mt-3 text-lg  ">
@@ -710,7 +858,7 @@
 
                             </div>
                         </div>
-                        <!-- Images 2-->
+                        <!-- Images: 2-->
                         <div class="w-10/12 hidden lg:block lg:w-full ">
 
                             <div class="w-full h-full grid grid-rows-3 gap-y-3">
@@ -734,11 +882,11 @@
 
                     </div>
 
-                    <hr class="block border-black my-9 md:hidden" />
+                    <hr class="block border-black my-7 md:hidden" />
                     <!-- 4 house-->
                     <div
                         class="grid grid-rows-2 mb-4 sm:grid-rows-2 md:grid-rows-1 md:gap-x-10 md:grid-cols-5 lg:mb-5">
-                        <!-- Images 1-->
+                        <!-- Image: 1-->
                         <div class="col-span-2 bg-cover bg-center rounded-2xl ">
 
                             <div class=" grid grid-rows-3 gap-y-3 h-full">
@@ -764,7 +912,7 @@
 
                                     <button
                                         class="text-white bg-green-600 rounded-2xl font-semibold px-5 py-1 text-md mt-3 justify-end ">
-                                        Venta
+                                        Fracción
                                     </button>
                                 </div>
                                 <div class="py-2 ">
@@ -778,16 +926,57 @@
 
                                 <hr class=" border-black py-2" />
 
-                                <div class="text-white bg-green-600 px-2 py-1 rounded-bl-lg rounded-tr-lg">
-                                    <p class="text-gray-200 text-sm md:text-md">
-                                        Valor propiedad
-                                    </p>
-                                    <h2 class="text-white font-bold text-2xl md:text-1xl">
-                                        20.0000.000 <span>COP</span>
-                                    </h2>
+                                <div class="grid grid-cols-3 gap-1 ">
+
+                                    <div class="text-white bg-green-600  rounded-bl-lg rounded-tr-lg col-span-2 ">
+                                        <p class="text-gray-200 text-md mx-2 mt-2">
+                                            Valor Fracción
+                                        </p>
+                                        <h2 class="text-white font-bold text-xl mx-2">
+                                            20.0000.000 <span class="font-normal text-xs">COP</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="text-white  bg-green-600 rounded-bl-lg rounded-tr-lg col-span-1">
+
+                                        <p class="text-gray-200 text-xs leading-none mt-2 text-center ">
+                                            fracciones disponibles
+                                        </p>
+
+                                        <h2 class="text-white font-bold  mb-1 text-4xl text-center">
+                                            10
+                                        </h2>
+                                    </div>
                                 </div>
 
-                                <div class="flex justify-between my-4">
+                                <div class="mt-4">
+                                    <h2 class="text-blue-950 font-bold text-xl">Fracciones Compradas #2</h2>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación uno</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class=" my-3 flex items-center gap-3">
+                                        <img class="h-10" src="/media/lilhouse.png" alt="">
+                                        <div>
+                                            <h2 class="text-blue-950 font-bold text-xl">Casa ubicación dos</h2>
+                                            <p class="text-sm text-gray-500">Ubicacion de proyecto</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <p class="text-lg text-gray-600 mb-1">Detalles destacados</p>
+                                </div>
+
+
+
+                                <div class="flex justify-between mb-4">
                                     <div>
                                         <div class="flex gap-2">
                                             <img class="self-center" src="/media/door.png" alt="">
@@ -800,8 +989,9 @@
                                         </div>
                                     </div>
 
-                                    <div>
 
+
+                                    <div>
 
 
                                         <div class="flex gap-2">
@@ -818,10 +1008,7 @@
 
                                 </div>
 
-                                <h2 class="text-blue-900 text-xl font-bold">
-                                    nombre del proyecto
-                                </h2>
-                                <a class="block underline text-gray-600 " href="#">conocer mas</a>
+
 
                                 <button
                                     class="text-white bg-blue-900 cursor:pointer rounded py-1 px-10 rounded-tl-lg rounded-br-lg font-bold mt-3 text-lg  ">
@@ -830,7 +1017,7 @@
 
                             </div>
                         </div>
-                        <!-- Images 2-->
+                        <!-- Images: 2-->
                         <div class="w-10/12 hidden lg:block lg:w-full ">
 
                             <div class="w-full h-full grid grid-rows-3 gap-y-3">
@@ -853,6 +1040,7 @@
 
 
                     </div>
+
 
                 </div>
 
