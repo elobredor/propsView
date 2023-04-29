@@ -263,6 +263,7 @@
         <section class=" grid grid-rows-1 md:grid-cols-3">
             <!-- Column Filter-->
             <div class="mx-10 md:mx-0  lg:mx-10">
+                <!-- Two green buttons-->
                 <div class="grid grid-cols-2 gap-3 mt-7">
                     <button type="submit"
                         class="bg-green-600 text-white font-bold py-2  rounded-br-xl rounded-tl-xl  text-lg w-full  shadow-lg shadow-blue-200">
